@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angelica Jade Designs</title>
+    <!-- font link sacramento and handlee -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Prata&family=Quicksand:wght@300;400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="index.css">
+    <!-- animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0c7be60242.js" crossorigin="anonymous"></script>
+  </head>
+    <body>
+        <header>
+            <h1>Angelica Jade <span>Designs</span></h1>
+        </header>
+        <main>
+            <div id="about">
+                <h1>BETTER THINGS COMING</h1>
+                <h2>Hi there! We are launching our new site soon.</h2>
+                <p>For now, keep in touch with us below!</p>
+                <button id="signup-btn">sign up!</button>
+                <section class="links">
+                    <a class="link" target="_blank" href="https://www.instagram.com/mustbegeli/"><i class="fa-brands fa-instagram icon"></i>
+                        Instagram</a>
+                    <a class="link" target="_blank" href="#"><i class="fa-brands fa-linkedin icon"></i>
+                        LinkedIn</a>
+                    <a class="link" target="_blank" href="#"><i class="fa-regular fa-envelope icon"></i>
+                        Email</a>
+                    <a class="link" target="_blank" href="#"><i class="fa-brands fa-pinterest icon"></i>
+                        Pinterest</a>
+                </section>
+            </div>
+            <div class="modal" id="modal">
+                <div class="close-modal-btn-container">
+                    <button class="modal-close-btn" id="modal-close-btn">X</button>
+                </div>
+                <div class="modal-inner" id="modal-inner">
+                    <h2>Inquire here</h2>
+                    <p class="modal-text" id="modal-text">Enter your name and email address and be the first to know when we are live.</p>
+                    <form 
+                        id="consent-form"
+                        action="https://formspree.io/f/mqkvzdoe"
+                        method="POST"
+                    >
+                        <input type="text" name="fullName" placeholder="Enter your full name" required/>
+                        <input type="email" name="email" placeholder="Enter your email" required/>
+                        <input type="text" name="textbox" placeholder="Write a message (optional)"/>
+                        <button type="submit" class="modal-btn">Submit</button>
+                    </form>
+                </div>
+            <!--
+            <section id="contact">
+                <h2>Contact</h2>
+                    <label>
+                        Your email:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        Your message:
+                        
+                    </label>
+                    <!- your other form fields go here ->
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        -->
+        </main>
+        <footer>
+            <p class="copy">&copy; Copyright 2023 | Built with &#x2661; by Angelica Jade</p>
+        </footer>
+    </body>
+    <script src="index.js"></script>
+</html>

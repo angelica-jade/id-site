@@ -1,0 +1,258 @@
+/* CSS HEX 
+--seashell: #eee2df;
+--champagne-pink: #eed7c5;
+--rosy-brown: #BE9382;
+--burnt-sienna: #c97c5d;
+--redwood: #b36a5e;
+*/
+body {
+    font-family: 'Prata', serif;
+    margin: 0;
+    height: 100vh;
+    }
+    
+header {
+    background-color: #B36A5E;
+    color: #eee2df;
+    display: flex;
+    justify-content: center;
+    padding: 1em 2em;
+    text-align: center;
+    }
+    
+span {
+    font-family: 'Tangerine', cursive;
+    display: block;
+}
+
+a, button {
+        font-family: 'Quicksand', sans-serif;
+        color: #C89F9C;
+        text-decoration: none;
+    }
+
+/*
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    
+nav li {
+    list-style: none;
+    }
+    
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    }
+    
+nav a:hover {
+    background-color: #979292;
+    }
+
+form label, form textarea {
+    display: block;
+    margin-bottom: 10px;
+    }
+
+ form input, form textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    }
+    
+form input[type="submit"] {
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    }
+    
+form input[type="submit"]:hover {
+    background-color: #666;
+    }
+    */
+    
+main {
+    padding: 50px;
+    background-color: #EEE2DF;
+    color: #C89F9C;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    
+section {
+    margin-top: 50px;
+    }
+    
+ h1 {
+    font-size: 3rem;
+    margin: 0;
+    }
+    
+button {
+        border: none;
+        color: #EEE2DF;
+        background-color: #B36A5E;
+        padding: 1em;
+        width: 35%;
+    }
+
+button:hover {
+    background-color: #C89F9C;
+    cursor: pointer;
+}
+
+.icon {
+    color: #B36A5E;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link:hover,
+.icon:hover {
+    cursor: pointer;
+    color: #C89F9C;
+}
+
+footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #B36A5E;
+        color: #EEE2DF;
+        padding: 1em 2em;
+        margin-top: auto;
+    }
+
+
+/* modal */
+  
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 420px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #BE9382;
+    background-color: #BE9382;
+    color: #EEE2DF;
+    opacity: 0;
+    transition: opacity 5s ease-in;
+}
+
+.modal:target {
+    opacity: 1;
+  }
+
+.modal-inner{
+    width: 290px;
+    margin: 0 auto;
+}
+
+/* modal buttons */
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 9px;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #EEE2DF;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: #B36A5E;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal-btn{
+    padding: 10px 24px;
+    cursor: pointer;
+    margin: .5em;
+}
+
+/* modal input */
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* modal after submit */
+.modal-text{
+    height: 80px;
+    line-height: 23px;
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+@keyframes appear {
+    0% {
+      position: absolute;
+      z-index: 100;
+      display: flex;
+      transform: scale(0.1);
+      transition: all 500ms ease-out,
+      transform-origin 1ms;
+    }
+    100% {
+      position: fixed;
+      z-index: 100;
+      display: flex;
+      opacity: 1;
+      transform: scale(1);
+      top: 1rem;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 0 2rem rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.9);
+      }
+  }
+    
+  /*
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    nav ul {
+    margin-top: 20px;
+    }
+    
+    nav a {
+    display: block;
+    padding: 10px;
+    }
+    }
+*/
+

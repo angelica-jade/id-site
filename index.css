@@ -5,10 +5,14 @@
 --burnt-sienna: #c97c5d;
 --redwood: #b36a5e;
 */
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: 'Prata', serif;
-    margin: 0;
     height: 100vh;
+    width: 100vw;
+    margin: 0;
     }
     
 header {
@@ -82,11 +86,20 @@ main {
     padding: 50px;
     background-color: #EEE2DF;
     color: #C89F9C;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    
     }
     
+#main-container{
+    min-width: 50%;
+    margin: 0 auto;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 section {
     margin-top: 50px;
     }
@@ -115,6 +128,8 @@ button:hover {
 
 .links {
     display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -125,12 +140,15 @@ button:hover {
 }
 
 footer {
-        display: flex;
-        flex-direction: column;
         background-color: #B36A5E;
         color: #EEE2DF;
-        padding: 1em 2em;
-        margin-top: auto;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        width: 100vw;
+        height: 3em;
+        text-align: center;
     }
 
 
